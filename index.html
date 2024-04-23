@@ -1,386 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpeg" href="icons.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MY Shivam</title>
 </head>
 <style>
-    *{
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
-    body{
+
+    body {
         background-color: rgb(33, 32, 32);
-        font-family:"Open Sans", sans-serif;
+        font-family: "Open Sans", sans-serif;
         overflow: hidden auto;
     }
-    nav{
+
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-}
-.bar{
-    display: none;
-}
-.logo{
-    font-size: 40px;
-    padding: 20px;
-    font-weight: 900;
-    color: red;
-    animation: logo 2s;
-}
-@keyframes logo{
-    from{
-        transform: translateY(-70%);
     }
-    to{
-        transform: translateY(0%);
-    }
-}
-.nav-1 ul ,a{
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    margin: 1.4rem;
-     font-size: 2rem;
-     color: white;
-     animation: ident 3s ease;
-}
-@keyframes ident{
-    from{
-        transform: translateY(60%);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-.nav-1 a::before{
-    content: "";
-    position: absolute;
-    top: 88px;
-    
-}
-.nav-1 a:hover::before{
-    width: 89px;
-    height: 5px;
-    background-color: red;
-    transition: 0.4s ease;
-}
-.nav-1 a:hover{
-    color: red;
-    transition: 0.4s;
-}
-.flex-1{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    margin-top: 6rem;
-}
-.flex-1 img{
-    border-radius: 50%;
-    border: solid 5px red;
-    width: 26%;
-    height: 54vh;
-    animation: maintag  3s linear  infinite alternate;
-}
-@keyframes maintag{
-    from{
-        transform: translateY(-15%);
-    }
-    to{
-        transform: translateY(0%);
-    }
-}
 
-.text h1{
-    font-weight: bold;
-    width: 28rem;
-    margin: 0px 0px 20px;
-    text-transform: capitalize;
-    animation: tagtext 3s;
-}
-@keyframes tagtext{
-    from{
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-.text p{
-    width: 30rem;
-    font-weight: 200;
-    line-height: 20px;
-    animation:tagp 4s ease;
-}
-@keyframes tagp{
-    from{
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-span{
-    color: red;
-}
-.social i{
-    margin: 0.8rem;
-    cursor: pointer;
-    font-size: 2rem;
-    margin-top: 20px;
-    transition: 0.4s;
-}
-.social{
-    animation: tagi 4s;
-    animation-duration: 1s;
-    opacity: 1;
-}
-@keyframes tagi{
-    from{
-        transform: scale(0);
-    }
-    to{
-        transform: scale(1);
-    }
-}
-
-.btn{
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: red;
-    color: white;
-    margin-top: 10px;
-    cursor: pointer;
-    animation: 3s tagbtn;
-}
-@keyframes tagbtn{
-    from{
-        transform: translateY(40%);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-.btn:hover{
-    background-color: black;
-    color: white;
-    transition: 0.4s;
-}
-.social :hover:nth-child(1){
-    color:#1877F2;
-    
-}
-.social :hover:nth-child(2){
-    color: #1DA1F2;
-}
-.social :hover:nth-child(3){
-    color: #FF0000;
-}
-
-.social :hover:nth-child(5){
-    color: #0A66C2;
-}
-section{
-    margin-top: 20rem;
-}
-.text-1{
-    text-align: center;
-    font-size: 3rem;
-    color: red;
-    font-weight: bolder;
-}
-.text-1::after{
-    content: "";
-    width: 140px;
-    height: 6px;
-    background-color: red;
-    position: absolute;
-    bottom: -17rem;
-    left: 43rem;
-}
-.skill-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10rem;
-}
-.skill-icon  i{
-    color: #f06529;
-    font-size: 4rem;
-    margin: 1.2rem;
-}
-
-.html{
-    width: 360px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: green;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    animation: fast  3s;
-    transition: 0.4s ease;
-}
-@keyframes fast{
-    from{
-        width:0%;
-    }
-    to{
-        width:70%;
-    }
-}
-.white{
-    background-color: white;
-    width: 500px;
-    height:40px;
-    border-radius: 20px;
-}
-.skill-css{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.skill-css i{
-    color: #1877F2;
-    font-size: 4rem;
-    margin: 1.2rem;
-}
-.css{
-    width: 260px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(40, 20, 221);
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    animation: fast1  3s;
-    transition: 0.4s ease;
-}
-@keyframes fast1{
-    from{
-        width:0%;
-    }
-    to{
-        width:40%;
-    }
-}
-.skill-js{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.skill-js i{
-    color:#b6f039;
-    font-size: 4rem;
-    margin: 1.2rem;
-}
-.js{
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: yellow;
-    text-align: center;
-    font-size: 2rem;
-    animation: fast2  3s;
-    transition: 0.4s ease;
-}
-@keyframes fast2{
-    from{
-        width:0%;
-    }
-    to{
-        width:30%;
-    }
-}
-@media (width < 600px) {
-    .bar{
-        color: white;
-    font-size: 25px;
-    position: absolute;
-    top: 39px;
-    left: 20px;
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-    }
- .nav-1{
-  display: none;
-    }
-    .tek ,ul{
-        height: 116vh;
-        background-color: #1877F2;
-        width: 100%;
-        padding: 10px;
-        display: block;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-    }
-    .logo{
-        animation: none;
-    }
-    
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-1 ul ,a{
-        animation: none;
-        margin: 2.4rem;
-    }
-    .flex-1{
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-1 a::before{
+    .bar {
         display: none;
     }
-    .flex-1 img{
-    margin-top: -53px;
-    width: 70%;
-    height: 44vh;
-    animation: none;
-    }
-    .text{
-        text-align: center;
-    }
-    .text h1{
-        width: 20rem;
-        margin: auto;
-        margin-top: 20px;
-        animation: none;
-    }
-    .text p{
-        margin-top: 20px;
-        width: 26rem;
-        line-height: 25px;
-        animation: none;
-    }
-    .btn{
-        animation: none;
-    }
-   
-    
-}
 
+    .logo {
+        font-size: 40px;
+        padding: 20px;
+        font-weight: 900;
+        color: red;
+        animation: logo 2s;
+    }
+
+    @keyframes logo {
+        from {
+            transform: translateY(-70%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+
+    .nav-1 ul,
+    a {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        margin: 1.4rem;
+        font-size: 2rem;
+        color: white;
+        animation: ident 3s ease;
+    }
+
+    @keyframes ident {
+        from {
+            transform: translateY(60%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    .nav-1 a::before {
+        content: "";
+        position: absolute;
+        top: 88px;
+
+    }
+
+    .nav-1 a:hover::before {
+        width: 89px;
+        height: 5px;
+        background-color: red;
+        transition: 0.4s ease;
+    }
+
+    .nav-1 a:hover {
+        color: red;
+        transition: 0.4s;
+    }
+
+    .flex-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        margin-top: 6rem;
+    }
+
+    .flex-1 img {
+        border-radius: 50%;
+        border: solid 5px red;
+        width: 26%;
+        height: 54vh;
+        animation: maintag 3s linear infinite alternate;
+    }
+
+    @keyframes maintag {
+        from {
+            transform: translateY(-15%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+
+    .text h1 {
+        font-weight: bold;
+        width: 28rem;
+        margin: 0px 0px 20px;
+        text-transform: capitalize;
+        animation: tagtext 3s;
+    }
+
+    @keyframes tagtext {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
+    .text p {
+        width: 30rem;
+        font-weight: 200;
+        line-height: 20px;
+        animation: tagp 4s ease;
+    }
+
+    @keyframes tagp {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
+    span {
+        color: red;
+    }
+
+    .social i {
+        margin: 0.8rem;
+        cursor: pointer;
+        font-size: 2rem;
+        margin-top: 20px;
+        transition: 0.4s;
+    }
+
+    .social {
+        animation: tagi 4s;
+        animation-duration: 1s;
+        opacity: 1;
+    }
+
+    @keyframes tagi {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .btn {
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: red;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+        animation: 3s tagbtn;
+    }
+
+    @keyframes tagbtn {
+        from {
+            transform: translateY(40%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    .btn:hover {
+        background-color: black;
+        color: white;
+        transition: 0.4s;
+    }
+
+    .social :hover:nth-child(1) {
+        color: #1877F2;
+
+    }
+
+    .social :hover:nth-child(2) {
+        color: #1DA1F2;
+    }
+
+    .social :hover:nth-child(3) {
+        color: #FF0000;
+    }
+
+    .social :hover:nth-child(5) {
+        color: #0A66C2;
+    }
+
+    section {
+        margin-top: 20rem;
+    }
+
+    .text-1 {
+        text-align: center;
+        font-size: 3rem;
+        color: red;
+        font-weight: bolder;
+    }
+
+    .text-1::after {
+        content: "";
+        width: 140px;
+        height: 6px;
+        background-color: red;
+        position: absolute;
+        bottom: -17rem;
+        left: 43rem;
+    }
+
+    .skill-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+    }
+
+    .skill-icon i {
+        color: #f06529;
+        font-size: 4rem;
+        margin: 1.2rem;
+    }
+
+    .html {
+        width: 360px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: green;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        animation: fast 3s;
+        transition: 0.4s ease;
+    }
+
+    @keyframes fast {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 70%;
+        }
+    }
+
+    .white {
+        background-color: white;
+        width: 500px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .skill-css {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-css i {
+        color: #1877F2;
+        font-size: 4rem;
+        margin: 1.2rem;
+    }
+
+    .css {
+        width: 260px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: rgb(40, 20, 221);
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        animation: fast1 3s;
+        transition: 0.4s ease;
+    }
+
+    @keyframes fast1 {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 40%;
+        }
+    }
+
+    .skill-js {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-js i {
+        color: #b6f039;
+        font-size: 4rem;
+        margin: 1.2rem;
+    }
+
+    .js {
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: yellow;
+        text-align: center;
+        font-size: 2rem;
+        animation: fast2 3s;
+        transition: 0.4s ease;
+    }
+
+    @keyframes fast2 {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 30%;
+        }
+    }
+
+    @media (width < 600px) {
+        .bar {
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            top: 39px;
+            left: 20px;
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .nav-1 {
+            display: none;
+        }
+
+        .tek,
+        ul {
+            height: 116vh;
+            background-color: #1877F2;
+            width: 100%;
+            padding: 10px;
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+        }
+
+        .logo {
+            animation: none;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-1 ul,
+        a {
+            animation: none;
+            margin: 2.4rem;
+        }
+
+        .flex-1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-1 a::before {
+            display: none;
+        }
+
+        .flex-1 img {
+            margin-top: -53px;
+            width: 70%;
+            height: 44vh;
+            animation: none;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .text h1 {
+            width: 20rem;
+            margin: auto;
+            margin-top: 20px;
+            animation: none;
+        }
+
+        .text p {
+            margin-top: 20px;
+            width: 26rem;
+            line-height: 25px;
+            animation: none;
+        }
+
+        .btn {
+            animation: none;
+        }
+
+
+}
 </style>
 <body>
     <div class="bar">
@@ -401,66 +467,110 @@ section{
     </nav>
     <div class="flex-1">
         <img src="prilfe.jpeg" alt="shivam">
-    <div class="text">
-        <h1>Hii, <span> I am shivam kumar..
-            (A Frontend developer)</span>
-        </h1>
-        <p> As of now I am in third year of diploma from DSEU, Rajokri Campus. I am proficient in HTML, CSS, JavaScript etc by learning through youtube videos. Subititles feature of Youtube helped me all these skills even after having deaf disability.
-        </p>
-        <div class="social">
-            <i class="fa-brands fa-square-facebook" onclick="facbook()"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-github" onclick="github()"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            
+        <div class="text">
+            <h1>Hii, <span> I am shivam kumar..
+            (A Frontend developer)</span></h1>
+            <p> As of now I am in third year of diploma from DSEU, Rajokri Campus. I am proficient in HTML, CSS,
+                JavaScript etc by learning through youtube videos. Subititles feature of Youtube helped me all these
+                skills even after having deaf disability. </p>
+            <div class="social">
+                <i class="fa-brands fa-square-facebook" onclick="facbook()"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-github" onclick="github()"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <button class="btn" onclick="front()">front-end</button>
         </div>
-        <button class="btn" onclick="front()">front-end</button>
-    </div>
     </div>
     <section>
         <div class="text-1">Our Skill</div>
         <div class="skill-icon">
             <i class="fa-brands fa-html5"></i>
             <div class="white">
-            <div class="html">70%</div>
+                <div class="html">70%</div>
             </div>
         </div>
         <div class="skill-css">
-        <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-css3-alt"></i>
             <div class="white">
-            <div class="css">50%</div>
+                <div class="css">50%</div>
             </div>
         </div>
         <div class="skill-js">
             <i class="fa-brands fa-js"></i>
-                <div class="white">
+            <div class="white">
                 <div class="js">25%</div>
-                </div>
             </div>
+        </div>
     </section>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const bars = document.getElementById("bar");
             const menus = document.getElementById("menu");
-            bars.addEventListener("click", function() {
+            bars.addEventListener("click", function () {
                 menus.classList.toggle("tek");
                 bars.classList.toggle("fa-xmark");
             });
         });
-        function facbook(){
-            let url="https://www.facebook.com/";
+        function facbook() {
+            let url = "https://www.facebook.com/";
             window.open(url);
         }
-        function front(){
-            const url="https://www.frontendmentor.io/profile/578shivam";
+        function front() {
+            const url = "https://www.frontendmentor.io/profile/578shivam";
             window.open(url);
         }
-        function github(){
-            var url="https://github.com/578shivam";
+        function github() {
+            var url = "https://github.com/578shivam";
             window.open(url);
         }
+        document.addEventListener("DOMContentLoaded", function() {
+    var htmlProgress = document.querySelector('.skill-icon .html');
+    var cssProgress = document.querySelector('.skill-css .css');
+    var jsProgress = document.querySelector('.skill-js .js');
+
+    var htmlWidth = 0;
+    var cssWidth = 0;
+    var jsWidth = 0;
+
+    var htmlBar = setInterval(frameHtml, 20);
+    var cssBar = setInterval(frameCss, 20);
+    var jsBar = setInterval(frameJs, 20);
+
+    function frameHtml() {
+        if (htmlWidth >= 70) {
+            clearInterval(htmlBar);
+        } else {
+            htmlWidth++;
+            htmlProgress.style.width = htmlWidth + '%';
+            htmlProgress.innerText = htmlWidth + '%';
+        }
+    }
+
+    function frameCss() {
+        if (cssWidth >= 50) {
+            clearInterval(cssBar);
+        } else {
+            cssWidth++;
+            cssProgress.style.width = cssWidth + '%';
+            cssProgress.innerText = cssWidth + '%';
+        }
+    }
+
+    function frameJs() {
+        if (jsWidth >= 25) {
+            clearInterval(jsBar);
+        } else {
+            jsWidth++;
+            jsProgress.style.width = jsWidth + '%';
+            jsProgress.innerText = jsWidth + '%';
+        }
+    }
+});
+
     </script>
-    
+
 </body>
+
 </html>
